@@ -1,0 +1,29 @@
+{
+  "name": "test-automation",
+  "version": "1.0.0",
+  "description": "This is learning automated testing ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start:ng": "cd jamine-angular && ng serve --open",
+    "test:ng": "cd jamine-angular && ng test",
+    "e2e:ng": "cd jamine-angular && ng e2e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezkemboi/test-automation.git"
+  },
+  "keywords": [
+    "test",
+    "selenium",
+    "jasmine",
+    "enzyme",
+    "protractor"
+  ],
+  "author": "Ezrqn Kemboi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ezkemboi/test-automation/issues"
+  },
+  "homepage": "https://github.com/ezkemboi/test-automation#readme"
+}
