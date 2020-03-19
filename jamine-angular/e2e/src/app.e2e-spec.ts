@@ -1,5 +1,5 @@
 import { AppPage } from './app.po';
-import { browser, logging } from 'protractor';
+import { browser, logging, element, by } from 'protractor';
 
 describe('workspace-project App', () => {
   let page: AppPage;
@@ -8,9 +8,21 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display Title in the homepage', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('jamine-angular app is running!');
+    expect(page.getTitleText()).toEqual('Test Automation app is running!');
+  });
+
+  it('should get an sample element in navbar', () => {
+    page.navigateTo();
+    const sampleNavText = element(by.id('sample-nav-link')).getText();
+    expect(sampleNavText).toEqual('Sample');
+  });
+
+  it('should get all <a> tags in navbar', () => {
+    page.navigateTo();
+    const sampleATagList = element.all(by.css('.Pages a')).getText();
+    expect(sampleATagList).toEqual(['Login', 'Sample', 'Not Found']);
   });
 
   afterEach(async () => {

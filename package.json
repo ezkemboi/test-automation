@@ -6,8 +6,9 @@
   "scripts": {
     "test": "test",
     "start:ng": "cd jamine-angular && ng serve --open",
-    "test:ng": "cd jamine-angular && ng test",
-    "e2e:ng": "cd jamine-angular && ng e2e"
+    "test:ng": "cd jamine-angular && ng test --watch=false",
+    "e2e:ng": "cd jamine-angular && ng e2e --port=4000",
+    "coverage:ng": "cd jamine-angular && ng test --code-coverage=true --watch=false"
   },
   "repository": {
     "type": "git",
