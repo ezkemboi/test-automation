@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display Title in the homepage', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Test Automation app is running!');
+    expect(page.getTitleText()).toEqual('Test Automation Application');
   });
 
   it('should get an sample element in navbar', () => {
