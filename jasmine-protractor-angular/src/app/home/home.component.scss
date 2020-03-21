@@ -6,3 +6,20 @@ h5,
 h6 {
   margin: 8px 0;
 }
+
+.Homepage {
+  min-height: 80vh;
+  text-align: center;
+  &__title {
+    margin-bottom: 15%;
+    #homepage-title {
+      margin-bottom: 20px;
+    }
+  }
+  &__links {
+    #links-to-get-started {
+      margin: 5% 0;
+    }
+  }
+}
+
