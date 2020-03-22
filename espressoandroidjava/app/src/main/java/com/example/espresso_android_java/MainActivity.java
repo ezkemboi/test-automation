@@ -24,4 +24,10 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
+
+    /** show images page */
+    public void showImages(View view) {
+        Intent intent = new Intent(this, ShowImages.class);
+        startActivity((intent));
+    }
 }
