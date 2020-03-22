@@ -32,7 +32,7 @@ public class ExampleInstrumentedTest {
     public ActivityTestRule<MainActivity> activityRule = new ActivityTestRule<>(MainActivity.class);
 
     @Test
-    public void anDisplayMessageOnEditText() {
+    public void onDisplayMessageOnEditText() {
         // fill the edit field
         onView(withId(R.id.editText)).perform(typeText("Hello World!"));
         // click show button
